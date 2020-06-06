@@ -1,0 +1,59 @@
+.tile {
+    align-items: center;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: flex;
+    height: 250px;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    width: 160px;
+}
+
+.tile:hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.tile--selected {
+    box-shadow: 0 0 8px rgba(41, 184, 229, 0.25);
+}
+
+.image {
+    height: 100px;
+    width: 100px;
+}
+
+.name {
+    color: #4F4F4F;
+    font-size: 16px;
+    line-height: 20px;
+    max-height: 40px;
+    max-width: 100%;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.type {
+    color: #828282;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 15px;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.image-id {
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 15px;
+}

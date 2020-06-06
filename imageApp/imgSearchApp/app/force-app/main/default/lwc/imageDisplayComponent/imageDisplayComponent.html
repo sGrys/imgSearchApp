@@ -1,0 +1,25 @@
+<template>
+    <header class="header">
+        <lightning-input class="header__search"
+                         label="Search image ids"
+                         name="enter-search"
+                         onchange={handleSearch}
+                         placeholder="Search Text"
+                         type="search"
+                         variant="label-hidden"
+        ></lightning-input>
+        </header>
+    <template for:each={images} for:item="image">
+        <c-image-tile image={image}
+                      key={image.id}
+                      onselect={handleImageSelect}
+                      selected={image.selected}
+        ></c-image-tile>
+    </template>
+
+    <template if:true={isLoading}>
+        <div class="loader">
+            <lightning-spinner alternative-text="Loading" variant="brand" size="large"></lightning-spinner>
+        </div>
+    </template>
+</template>

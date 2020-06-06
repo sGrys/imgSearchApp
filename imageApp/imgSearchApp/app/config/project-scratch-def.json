@@ -1,0 +1,28 @@
+{
+  "orgName": "Enxoo Core - Developer Environment",
+  "country": "IE",
+  "edition": "Developer",
+  "features": [
+      "MultiCurrency",
+      "Communities",
+      "PlatformCache"
+  ],
+  "settings": {
+      "lightningExperienceSettings": {
+          "enableS1DesktopEnabled": true
+      },
+      "chatterSettings": {
+          "enableChatter": true
+      },
+      "languageSettings": {
+          "enableTranslationWorkbench": true
+      },
+      "quoteSettings": {
+          "enableQuote": true
+      },
+      "communitiesSettings": {
+          "enableNetworksEnabled": true,
+          "enableOotbProfExtUserOpsEnable": true
+      }
+  }
+}
